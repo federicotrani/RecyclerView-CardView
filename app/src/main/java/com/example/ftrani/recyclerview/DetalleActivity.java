@@ -17,7 +17,7 @@ public class DetalleActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         ImageView imgFoto = (ImageView)findViewById(R.id.imgDetalleFoto);
-        TextView tvNombre = (TextView)findViewById(R.id.tvNombre);
+        TextView tvNombre = (TextView)findViewById(R.id.tvDetalleNombre);
         TextView tvTelefono = (TextView)findViewById(R.id.tvDetalleTelefono);
         TextView tvEmail = (TextView)findViewById(R.id.tvDetalleEmail);
         Button btnCerrar = (Button)findViewById(R.id.btnCerrar);
@@ -33,5 +33,7 @@ public class DetalleActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }

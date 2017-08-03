@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -42,7 +43,9 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
             @Override
             public void onClick(View v) {
 
-                Context context = v.getContext();
+                Context context = (Context)v.getContext();
+
+                //Toast.makeText(context,"Hizo clic!!",Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(context,DetalleActivity.class);
                 intent.putExtra("KEY_NOMBRE",contacto.getNombre());
